@@ -1,23 +1,21 @@
-import React from "react";
+// components/SuggestionCard.tsx
+import React from 'react';
 
 interface SuggestionCardProps {
+  className?: string;
   title: string;
   suggestion: string;
   icon?: React.ReactNode;
 }
 
-export const SuggestionCard: React.FC<SuggestionCardProps> = ({
-  title,
-  suggestion,
-  icon,
-}) => {
+export const SuggestionCard: React.FC<SuggestionCardProps> = ({ className, title, suggestion, icon }) => {
   return (
-    <div className="bg-white rounded-xl shadow-md p-6 transition-shadow duration-300 hover:shadow-xl hover:scale-105">
-      <div className="flex items-center gap-4 mb-3">
-        {icon && <div className="text-3xl text-blue-500">{icon}</div>}
-        <h2 className="text-2xl font-semibold text-gray-800">{title}</h2>
+    <div className={className}>
+      {icon && <div>{icon}</div>}
+      <div>
+        <h3 className="font-semibold">{title}</h3>
+        <p className="text-sm">{suggestion}</p>
       </div>
-      <p className="text-gray-700 text-base leading-relaxed">{suggestion}</p>
     </div>
   );
 };
