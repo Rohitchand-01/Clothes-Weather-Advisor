@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { WeatherCard } from '@/components/WeatherCard'
 import { OutfitCard } from '@/components/OutfitCard'
-import { SuggestionCard } from '@/components/SuggestionCard'
+import { SuggestionCard, SuggestionCardProps } from '@/components/SuggestionCard' // Explicitly import SuggestionCardProps
 import { getWeatherByCoords } from '@/lib/getWeather'
 import { suggestOutfit } from '@/lib/outfitLogic'
 import { useRouter } from 'next/navigation'

@@ -1,7 +1,7 @@
 // components/SuggestionCard.tsx
 import React from 'react';
 
-interface SuggestionCardProps {
+export interface SuggestionCardProps {
   className?: string;
   title: string;
   suggestion: string;
