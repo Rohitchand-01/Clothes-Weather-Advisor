@@ -120,7 +120,6 @@ export default function Dashboard() {
         </div>
 
         <SuggestionCard
-          className="bg-yellow-100 text-gray-800 rounded-lg shadow-lg p-4 flex items-center space-x-3"
           title="Pro Tip"
           suggestion={suggestion} 
           icon={<FaLightbulb />}
