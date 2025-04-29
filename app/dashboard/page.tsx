@@ -119,7 +119,7 @@ export default function Dashboard() {
           <OutfitCard outfit={outfit} />
         </div>
 
-        <SuggestionCard
+        <SuggestionCard 
           title="Pro Tip"
           suggestion={suggestion} 
           icon={<FaLightbulb />}
